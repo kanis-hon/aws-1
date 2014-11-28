@@ -1,0 +1,7 @@
+# Set VM Connection properties
+
+CERTIFICATE_PATH=./config
+CERTIFICATE_NAME=xxxxx.pem
+CERTIFICATE_PERMISSION=400
+USER=xxxxxx
+IP=10.10.10.10
