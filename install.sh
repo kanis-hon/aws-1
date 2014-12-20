@@ -11,7 +11,7 @@ EC2_API_ZIP="$EC2_API_PREFIX.zip"
 EC2_API_DOWNLOAD_URL="http://s3.amazonaws.com/ec2-downloads"
 EC2_API_HOME='/usr/local/ec2'
 JAVA_HOME=`/usr/libexec/java_home`
-JAVA_HOMEPAGE='http://www.oracle.com/technetwork/java/javase/downloads/index.html'
+JAVA_HOMEPAGE='http://www.java.com/en/download/index.jsp'
 PGP_HOMEPAGE='https://gpgtools.org/'
 GPG=`which gpg`
 ################'export JAVA_HOME=$(/usr/libexec/java_home)'
@@ -70,7 +70,7 @@ fi
 
 echo -n "  EC2 API Tools:"
 ec2_api_dir=`ls -1r $EC2_API_HOME/ | head -1 | grep $EC2_API_PREFIX`
-# check if $JAVA_HOME directory exists or not?
+# check if EC2 API Tool directory exists or not?
 if [ ! -z "$ec2_api_dir" ]; then
   echo -e "\t\t\t\t\t[OK]"
   echo "    $EC2_API_HOME/$ec2_api_dir"
@@ -89,11 +89,19 @@ else
   sudo unzip "$DOWNLOAD_DIR/$EC2_API_ZIP" -d $EC2_API_HOME
 fi
 
+# check for not to download
+
+# check export config
+
+# post-check
+
+# ssh and then apply
 
 
-
-
-
+#$ i=99
+#$ printf "%05d\n" $i
+#00099
+#http://stackoverflow.com/questions/8789729/zero-padding-in-bash
 
 
 
